@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- Outer high-contrast perimeter boundary stroke for legibility against #E50914 -->
+  <!-- Top Facet: Pure Solid White -->
+  <path d="M50 10 L86 31 V32 L50 53 L14 32 V31 L50 10 Z" fill="#FFFFFF" stroke="#000000" stroke-width="3.5" stroke-linejoin="round" />
+  
+  <!-- Top Facet Internal Grid Lines (Solid Deep Black) -->
+  <path d="M32 20.5 L68 41.5" stroke="#000000" stroke-width="2.2" stroke-linecap="round" />
+  <path d="M68 20.5 L32 41.5" stroke="#000000" stroke-width="2.2" stroke-linecap="round" />
+
+  <!-- Left Facet: Solid Primary Deep Black -->
+  <path d="M14 32 L50 53 V94 L14 73 V32 Z" fill="#000000" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round" />
+  
+  <!-- Left Facet Internal Grid Lines (Solid White for Maximum Contrast) -->
+  <path d="M32 42.5 V83.5" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" />
+  <path d="M14 52.5 L50 73.5" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" />
+
+  <!-- Right Facet: Solid Primary Deep Black with White Boundary -->
+  <path d="M50 53 L86 32 V73 L50 94 V53 Z" fill="#111111" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round" />
+  
+  <!-- Right Facet Internal Grid Lines (Solid White for Maximum Contrast) -->
+  <path d="M68 42.5 V83.5" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" />
+  <path d="M50 73.5 L86 52.5" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" />
+
+  <!-- Outer Protective Halo Boundary (Pure White) -->
+  <path d="M50 10 L86 31 V73 L50 94 L14 73 V31 Z" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linejoin="round" />
+
+  <!-- Central Focal Nexus Node (Solid Pure White with Black Core) -->
+  <circle cx="50" cy="53" r="5.5" fill="#FFFFFF" stroke="#000000" stroke-width="2.5" />
+  <circle cx="50" cy="53" r="1.5" fill="#000000" />
+</svg>
