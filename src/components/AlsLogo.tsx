@@ -7,80 +7,92 @@ interface LogoProps {
 }
 
 /**
- * ALS Infonet geometric cube mark inspired by isometric multi-faceted structure.
- * Designed with high contrast, sharp geometric clarity, and bold graphic definition.
+ * ALS Infonet Tri-Vector Nexus — Bespoke Architectural Monogram & Topological Circuit.
  * 
- * - 'hero-red': Specially tuned for the signature red (#E50914) background — crisp white top face,
- *               solid deep-black facets, pure white internal lattice lines, and glowing white core.
- * - 'light': Tuned for dark backgrounds (#080808) — pristine white isometric facets with crisp definition.
- * - 'dark': Tuned for light/cream backgrounds (#F4F2EB) — deep black facets with red core.
- * - 'monochrome': Uses currentColor for inline adaptability.
+ * Unlike common isometric boxes or generic letter-in-circle marks, this rare emblem represents:
+ * 1. The three foundational pillars of ALS (Architecture, Logic, Systems) and dual engineering hubs (Chennai & Bangalore).
+ * 2. An impossible, continuous interlocking ribbon (Möbius topology) symbolizing 100% uptime and the unbroken software lifecycle.
+ * 3. Chiseled, dual-faceted aerodynamic wings with precision-etched micro-conduits echoing optical data routing.
+ * 4. A central inverted optical aperture with an illuminated core nexus node (the Infonet signal pulse).
+ * 
+ * Tuned with high-contrast perimeter strokes for razor-sharp legibility on the signature #E50914 red background,
+ * dark canvases, and clean paper surfaces alike.
  */
 export const AlsLogo: React.FC<LogoProps> = ({
   className = '',
-  size = 32,
+  size = 36,
   variant = 'hero-red'
 }) => {
-  // Color configuration according to theme context
-  const colors = {
-    // Specifically tailored for #E50914 background: high visual punch, sharp contrast, clearly legible
+  // Theme color mapping for maximum contrast, aesthetic depth, and legibility
+  const theme = {
+    // Tuned specifically for the signature crimson red (#E50914) background:
+    // Pure brilliant white illuminated facets contrasted against deep obsidian facets with crisp white borders.
     'hero-red': {
-      top: '#FFFFFF',          // High-contrast clean white top face
-      left: '#000000',         // Deep solid black left facet
-      right: '#171717',        // Solid charcoal black right facet
-      stroke: '#000000',       // Bold perimeter line
-      topStroke: '#000000',
-      latticeLeft: '#FFFFFF',  // Crisp white inner grid lines on black facet
-      latticeRight: '#FFFFFF', // Crisp white inner grid lines on dark facet
-      latticeTop: '#000000',   // Black grid lines on white top facet
-      latticeOpacity: '0.9',   // High visibility grid
-      strokeWidth: '1.8',
-      core: '#FFFFFF',         // Bright white focal core node
-      coreStroke: '#000000'
+      faceLit: '#FFFFFF',
+      faceBevel: '#0A0A0A',
+      strokeOuter: '#FFFFFF',
+      strokeFacet: '#000000',
+      strokeWidthOuter: '3',
+      strokeWidthFacet: '1.8',
+      conduit: '#FFFFFF',
+      conduitWidth: '2',
+      apertureFill: '#0A0A0A',
+      apertureStroke: '#FFFFFF',
+      coreHalo: '#0A0A0A',
+      coreHaloStroke: '#FFFFFF',
+      coreDiamond: '#FFFFFF',
+      coreDot: '#E50914'
     },
-    // For dark backgrounds (like the black Footer #080808)
+    // For deep dark/black backgrounds (#080808 Footer, console panels)
     light: {
-      top: '#FFFFFF',
-      left: '#E5E5E5',
-      right: '#CCCCCC',
-      stroke: '#FFFFFF',
-      topStroke: '#111111',
-      latticeLeft: '#111111',
-      latticeRight: '#111111',
-      latticeTop: '#111111',
-      latticeOpacity: '0.4',
-      strokeWidth: '1.5',
-      core: '#E50914',
-      coreStroke: '#FFFFFF'
+      faceLit: '#FFFFFF',
+      faceBevel: '#E2E8F0',
+      strokeOuter: '#FFFFFF',
+      strokeFacet: '#0F172A',
+      strokeWidthOuter: '2.5',
+      strokeWidthFacet: '1.5',
+      conduit: '#E50914',
+      conduitWidth: '2.2',
+      apertureFill: '#0A0A0A',
+      apertureStroke: '#FFFFFF',
+      coreHalo: '#1E293B',
+      coreHaloStroke: '#FFFFFF',
+      coreDiamond: '#E50914',
+      coreDot: '#FFFFFF'
     },
-    // For light off-white / paper background (#F4F2EB)
+    // For light off-white / architectural paper backgrounds (#F4F2EB)
     dark: {
-      top: '#1E1E1E',
-      left: '#0A0A0A',
-      right: '#2D2D2D',
-      stroke: '#000000',
-      topStroke: '#000000',
-      latticeLeft: '#FFFFFF',
-      latticeRight: '#FFFFFF',
-      latticeTop: '#FFFFFF',
-      latticeOpacity: '0.5',
-      strokeWidth: '1.6',
-      core: '#E50914',
-      coreStroke: '#000000'
+      faceLit: '#0A0A0A',
+      faceBevel: '#262626',
+      strokeOuter: '#000000',
+      strokeFacet: '#FFFFFF',
+      strokeWidthOuter: '2.8',
+      strokeWidthFacet: '1.5',
+      conduit: '#E50914',
+      conduitWidth: '2',
+      apertureFill: '#0A0A0A',
+      apertureStroke: '#000000',
+      coreHalo: '#0A0A0A',
+      coreHaloStroke: '#000000',
+      coreDiamond: '#E50914',
+      coreDot: '#FFFFFF'
     },
+    // Monochrome currentColor adaptability
     monochrome: {
-      top: 'currentColor',
-      left: 'currentColor',
-      right: 'currentColor',
-      stroke: 'currentColor',
-      topStroke: 'currentColor',
-      latticeLeft: 'currentColor',
-      latticeRight: 'currentColor',
-      latticeTop: 'currentColor',
-      latticeOpacity: '0.6',
-      strokeWidth: '1.5',
-      core: 'currentColor',
-      coreStroke: 'currentColor'
+      faceLit: 'currentColor',
+      faceBevel: 'currentColor',
+      strokeOuter: 'currentColor',
+      strokeFacet: 'currentColor',
+      strokeWidthOuter: '2',
+      strokeWidthFacet: '1.5',
+      conduit: 'currentColor',
+      conduitWidth: '2',
+      apertureFill: 'none',
+      apertureStroke: 'currentColor',
+      coreHalo: 'currentColor',
+      coreHaloStroke: 'currentColor',
+      coreDiamond: 'currentColor',
+      coreDot: 'currentColor'
     }
   }[variant];
 
@@ -88,102 +100,161 @@ export const AlsLogo: React.FC<LogoProps> = ({
     <svg
       width={size}
       height={size}
-      viewBox="0 0 40 40"
+      viewBox="0 0 100 100"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={`shrink-0 select-none drop-shadow-sm ${className}`}
-      aria-label="ALS Infonet Logo"
+      aria-label="ALS Infonet Rare Emblem"
     >
-      {/* Outer Isometric Hexagon / 3D Cube Silhouette */}
-      <g>
-        {/* Crisp protective perimeter stroke for high contrast against #E50914 */}
-        {variant === 'hero-red' && (
+      {/* Protective High-Contrast Perimeter Silhouette for #E50914 */}
+      {variant === 'hero-red' && (
+        <path
+          d="M 50,4 
+             L 56,12 L 68,26 L 73,43 L 88,71 L 81,77 L 60,77 L 44,77 L 16,77 L 11,71 L 26,43 L 31,26 L 43,12 Z"
+          stroke="#FFFFFF"
+          strokeWidth="4"
+          strokeLinejoin="round"
+          fill="none"
+          opacity="0.9"
+        />
+      )}
+
+      {/* Origin Center Group: (50, 52) */}
+      <g transform="translate(50, 52)">
+        {/* =========================================================
+            BLADE 1: TOP ASCENDER ('A' Apex / Architecture) at 0°
+            ========================================================= */}
+        <g transform="rotate(0)">
+          {/* Secondary Bevel Face (Depth & Shadow) */}
           <path
-            d="M20 4.2L34.6 12.6V28.4L20 36.8L5.4 28.4V12.6Z"
-            stroke="#FFFFFF"
-            strokeWidth="2.4"
+            d="M 0,-42 L 18,-22 L 23,-4 L 14,12 L 2,7 L 0,-11 Z"
+            fill={theme.faceBevel}
+            stroke={theme.strokeFacet}
+            strokeWidth={theme.strokeWidthFacet}
             strokeLinejoin="round"
           />
-        )}
+          {/* Primary Lit Face (High-Contrast Blade) */}
+          <path
+            d="M 0,-42 L -12,-22 L -4,-6 L 0,-11 Z"
+            fill={theme.faceLit}
+            stroke={theme.strokeFacet}
+            strokeWidth={theme.strokeWidthFacet}
+            strokeLinejoin="round"
+          />
+          {/* Micro Data Conduit Channel (Infonet routing line) */}
+          <path
+            d="M 0,-35 L 0,-16"
+            stroke={theme.conduit}
+            strokeWidth={theme.conduitWidth}
+            strokeLinecap="round"
+          />
+        </g>
 
-        {/* Top isometric facet */}
-        <path
-          d="M20 4.5L34.5 12.8V13.3L20 21.6L5.5 13.3V12.8L20 4.5Z"
-          fill={colors.top}
-          stroke={colors.stroke}
-          strokeWidth={colors.strokeWidth}
-          strokeLinejoin="round"
-        />
+        {/* =========================================================
+            BLADE 2: BOTTOM-RIGHT HORIZON ANCHOR ('L' Foundation) at 120°
+            ========================================================= */}
+        <g transform="rotate(120)">
+          {/* Secondary Bevel Face */}
+          <path
+            d="M 0,-42 L 18,-22 L 23,-4 L 14,12 L 2,7 L 0,-11 Z"
+            fill={theme.faceBevel}
+            stroke={theme.strokeFacet}
+            strokeWidth={theme.strokeWidthFacet}
+            strokeLinejoin="round"
+          />
+          {/* Primary Lit Face */}
+          <path
+            d="M 0,-42 L -12,-22 L -4,-6 L 0,-11 Z"
+            fill={theme.faceLit}
+            stroke={theme.strokeFacet}
+            strokeWidth={theme.strokeWidthFacet}
+            strokeLinejoin="round"
+          />
+          {/* Micro Data Conduit Channel */}
+          <path
+            d="M 0,-35 L 0,-16"
+            stroke={theme.conduit}
+            strokeWidth={theme.conduitWidth}
+            strokeLinecap="round"
+          />
+        </g>
 
-        {/* Left isometric facet */}
-        <path
-          d="M5.5 13.3L20 21.6V37L5.5 28.7V13.3Z"
-          fill={colors.left}
-          stroke={colors.stroke}
-          strokeWidth={colors.strokeWidth}
-          strokeLinejoin="round"
-        />
+        {/* =========================================================
+            BLADE 3: BOTTOM-LEFT KINETIC LOOP ('S' Wave) at 240°
+            ========================================================= */}
+        <g transform="rotate(240)">
+          {/* Secondary Bevel Face */}
+          <path
+            d="M 0,-42 L 18,-22 L 23,-4 L 14,12 L 2,7 L 0,-11 Z"
+            fill={theme.faceBevel}
+            stroke={theme.strokeFacet}
+            strokeWidth={theme.strokeWidthFacet}
+            strokeLinejoin="round"
+          />
+          {/* Primary Lit Face */}
+          <path
+            d="M 0,-42 L -12,-22 L -4,-6 L 0,-11 Z"
+            fill={theme.faceLit}
+            stroke={theme.strokeFacet}
+            strokeWidth={theme.strokeWidthFacet}
+            strokeLinejoin="round"
+          />
+          {/* Micro Data Conduit Channel */}
+          <path
+            d="M 0,-35 L 0,-16"
+            stroke={theme.conduit}
+            strokeWidth={theme.conduitWidth}
+            strokeLinecap="round"
+          />
+        </g>
 
-        {/* Right isometric facet */}
-        <path
-          d="M20 21.6L34.5 13.3V28.7L20 37V21.6Z"
-          fill={colors.right}
-          stroke={colors.stroke}
-          strokeWidth={colors.strokeWidth}
-          strokeLinejoin="round"
-        />
+        {/* =========================================================
+            TOPOLOGICAL INTERLOCKING CAP:
+            Rerenders the illuminated crest of Blade 1 to weave OVER Blade 3,
+            completing the impossible, continuous Möbius loop.
+            ========================================================= */}
+        <g transform="rotate(0)">
+          <path
+            d="M 0,-42 L -12,-22 L -4,-6 L 0,-11 Z"
+            fill={theme.faceLit}
+            stroke={theme.strokeFacet}
+            strokeWidth={theme.strokeWidthFacet}
+            strokeLinejoin="round"
+          />
+          <path
+            d="M 0,-35 L 0,-20"
+            stroke={theme.conduit}
+            strokeWidth={theme.conduitWidth}
+            strokeLinecap="round"
+          />
+        </g>
 
-        {/* Inner geometric sub-division lines (Rubik's / modular lattice structure) */}
-        {/* Top face lattice */}
-        <path
-          d="M12.7 8.9L27.3 17.2"
-          stroke={colors.latticeTop}
+        {/* =========================================================
+            CENTRAL INFONET APERTURE & CORE NEXUS (Data Crosshair)
+            ========================================================= */}
+        {/* Negative Space Aperture Frame (Equilateral Delta) */}
+        <polygon
+          points="0,-11 9.53,5.5 -9.53,5.5"
+          fill={theme.apertureFill}
+          stroke={theme.apertureStroke}
           strokeWidth="1.2"
-          strokeOpacity={colors.latticeOpacity}
-        />
-        <path
-          d="M27.3 8.9L12.7 17.2"
-          stroke={colors.latticeTop}
-          strokeWidth="1.2"
-          strokeOpacity={colors.latticeOpacity}
+          opacity="0.95"
         />
 
-        {/* Left face lattice */}
+        {/* Precision Floating Diamond Nexus Core */}
         <path
-          d="M12.7 17.4V32.8"
-          stroke={colors.latticeLeft}
-          strokeWidth="1.2"
-          strokeOpacity={colors.latticeOpacity}
-        />
-        <path
-          d="M5.5 21V21L20 29.3"
-          stroke={colors.latticeLeft}
-          strokeWidth="1.2"
-          strokeOpacity={colors.latticeOpacity}
+          d="M 0,-6 L 4.5,0 L 0,6 L -4.5,0 Z"
+          fill={theme.coreDiamond}
+          stroke={theme.coreHaloStroke}
+          strokeWidth="1"
         />
 
-        {/* Right face lattice */}
-        <path
-          d="M27.3 17.4V32.8"
-          stroke={colors.latticeRight}
-          strokeWidth="1.2"
-          strokeOpacity={colors.latticeOpacity}
-        />
-        <path
-          d="M20 29.3L34.5 21"
-          stroke={colors.latticeRight}
-          strokeWidth="1.2"
-          strokeOpacity={colors.latticeOpacity}
-        />
-
-        {/* Center node / intersection anchor */}
+        {/* Luminous Central Node / Pulse Beacon */}
         <circle
-          cx="20"
-          cy="21.6"
-          r="2.6"
-          fill={colors.core}
-          stroke={colors.coreStroke}
-          strokeWidth="1.2"
+          cx="0"
+          cy="0"
+          r="1.8"
+          fill={theme.coreDot}
         />
       </g>
     </svg>

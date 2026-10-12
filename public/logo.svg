@@ -1,30 +1,50 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
-  <!-- Outer high-contrast perimeter boundary stroke for legibility against #E50914 -->
-  <!-- Top Facet: Pure Solid White -->
-  <path d="M50 10 L86 31 V32 L50 53 L14 32 V31 L50 10 Z" fill="#FFFFFF" stroke="#000000" stroke-width="3.5" stroke-linejoin="round" />
+  <!-- ALS Infonet Rare Emblem: The Tri-Vector Nexus & Topological Interlocking Circuit -->
   
-  <!-- Top Facet Internal Grid Lines (Solid Deep Black) -->
-  <path d="M32 20.5 L68 41.5" stroke="#000000" stroke-width="2.2" stroke-linecap="round" />
-  <path d="M68 20.5 L32 41.5" stroke="#000000" stroke-width="2.2" stroke-linecap="round" />
+  <!-- Outer Protective High-Contrast Silhouette for red/dark surfaces -->
+  <path
+    d="M 50,4 L 56,12 L 68,26 L 73,43 L 88,71 L 81,77 L 60,77 L 44,77 L 16,77 L 11,71 L 26,43 L 31,26 L 43,12 Z"
+    stroke="#FFFFFF"
+    stroke-width="3.5"
+    stroke-linejoin="round"
+    fill="none"
+  />
 
-  <!-- Left Facet: Solid Primary Deep Black -->
-  <path d="M14 32 L50 53 V94 L14 73 V32 Z" fill="#000000" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round" />
-  
-  <!-- Left Facet Internal Grid Lines (Solid White for Maximum Contrast) -->
-  <path d="M32 42.5 V83.5" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" />
-  <path d="M14 52.5 L50 73.5" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" />
+  <g transform="translate(50, 52)">
+    <!-- Blade 1: Top Ascender (0 deg) -->
+    <g transform="rotate(0)">
+      <path d="M 0,-42 L 18,-22 L 23,-4 L 14,12 L 2,7 L 0,-11 Z" fill="#0A0A0A" stroke="#000000" stroke-width="1.8" stroke-linejoin="round" />
+      <path d="M 0,-42 L -12,-22 L -4,-6 L 0,-11 Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.8" stroke-linejoin="round" />
+      <path d="M 0,-35 L 0,-16" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" />
+    </g>
 
-  <!-- Right Facet: Solid Primary Deep Black with White Boundary -->
-  <path d="M50 53 L86 32 V73 L50 94 V53 Z" fill="#111111" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round" />
-  
-  <!-- Right Facet Internal Grid Lines (Solid White for Maximum Contrast) -->
-  <path d="M68 42.5 V83.5" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" />
-  <path d="M50 73.5 L86 52.5" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" />
+    <!-- Blade 2: Bottom-Right Anchor (120 deg) -->
+    <g transform="rotate(120)">
+      <path d="M 0,-42 L 18,-22 L 23,-4 L 14,12 L 2,7 L 0,-11 Z" fill="#0A0A0A" stroke="#000000" stroke-width="1.8" stroke-linejoin="round" />
+      <path d="M 0,-42 L -12,-22 L -4,-6 L 0,-11 Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.8" stroke-linejoin="round" />
+      <path d="M 0,-35 L 0,-16" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" />
+    </g>
 
-  <!-- Outer Protective Halo Boundary (Pure White) -->
-  <path d="M50 10 L86 31 V73 L50 94 L14 73 V31 Z" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linejoin="round" />
+    <!-- Blade 3: Bottom-Left Loop (240 deg) -->
+    <g transform="rotate(240)">
+      <path d="M 0,-42 L 18,-22 L 23,-4 L 14,12 L 2,7 L 0,-11 Z" fill="#0A0A0A" stroke="#000000" stroke-width="1.8" stroke-linejoin="round" />
+      <path d="M 0,-42 L -12,-22 L -4,-6 L 0,-11 Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.8" stroke-linejoin="round" />
+      <path d="M 0,-35 L 0,-16" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" />
+    </g>
 
-  <!-- Central Focal Nexus Node (Solid Pure White with Black Core) -->
-  <circle cx="50" cy="53" r="5.5" fill="#FFFFFF" stroke="#000000" stroke-width="2.5" />
-  <circle cx="50" cy="53" r="1.5" fill="#000000" />
+    <!-- Interlocking Overpass Cap: Blade 1 over Blade 3 -->
+    <g transform="rotate(0)">
+      <path d="M 0,-42 L -12,-22 L -4,-6 L 0,-11 Z" fill="#FFFFFF" stroke="#000000" stroke-width="1.8" stroke-linejoin="round" />
+      <path d="M 0,-35 L 0,-20" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" />
+    </g>
+
+    <!-- Central Aperture Delta -->
+    <polygon points="0,-11 9.53,5.5 -9.53,5.5" fill="#0A0A0A" stroke="#FFFFFF" stroke-width="1.2" />
+
+    <!-- Central Floating Diamond Core -->
+    <path d="M 0,-6 L 4.5,0 L 0,6 L -4.5,0 Z" fill="#FFFFFF" stroke="#000000" stroke-width="1" />
+
+    <!-- Central Pulse Node (Crimson Core) -->
+    <circle cx="0" cy="0" r="1.8" fill="#E50914" />
+  </g>
 </svg>
